@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amendment Form</title>
+    <style>
+        /* Stylish font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif; /* Use Roboto Condensed font */
+            margin: 0;
+            padding: 0;
+            background-color: #333; /* Dark background color */
+            color: gold; /* Gold text color */
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #111; /* Dark background color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #777; /* Darker border color */
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Roboto Condensed', sans-serif; /* Use Roboto Condensed font */
+            font-size: 16px; /* Font size */
+        }
+        input[type="submit"] {
+            background-color: gold; /* Gold background color */
+            color: #333; /* Dark text color */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Roboto Condensed', sans-serif; /* Use Roboto Condensed font */
+            font-size: 18px; /* Font size */
+            font-weight: bold; /* Bold font weight */
+        }
+        input[type="submit"]:hover {
+            background-color: #d4af37; /* Darker gold color on hover */
+        }
+        label {
+            font-family: 'Roboto Condensed', sans-serif; /* Use Roboto Condensed font */
+            font-size: 18px; /* Font size */
+            font-weight: bold; /* Bold font weight for labels */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: gold;">BINI AMEND (Amendment Form)</h2>
+        <p>Contact us via WhatsApp: <a href="https://wa.me/0644216164" style="color: gold;">0644216164</a></p>
+        <form action="https://formspree.io/a.cipc100@gmail.com" method="post">
+            <label for="agent_name">Full Name of Agent:</label>
+            <input type="text" id="agent_name" name="Full Name of Agent" required>
+
+            <label for="agent_code">Agent Customer Code with PW:</label>
+            <input type="password" id="agent_code" name="Agent Customer Code with PW" required>
+
+            <label for="company_name">Company Name of Amendment:</label>
+            <input type="text" id="company_name" name="Company Name of Amendment" required>
+
+            <label for="reg_no">Company Registration Number of Amendment:</label>
+            <input type="text" id="reg_no" name="Company Registration Number of Amendment" required>
+
+            <label for="resigning_directors">Name of Resigning Directors (out):</label>
+            <input type="text" id="resigning_directors" name="Name of Resigning Directors (out)" required>
+
+            <label for="appointing_directors">Name of Appointing Directors (add):</label>
+            <input type="text" id="appointing_directors" name="Name of Appointing Directors (add)" required>
+
+            <label for="agent_contact">Agent Contact Number:</label>
+            <input type="text" id="agent_contact" name="Agent Contact Number" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
